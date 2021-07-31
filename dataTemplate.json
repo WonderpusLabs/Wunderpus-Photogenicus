@@ -1,0 +1,347 @@
+{
+	"_id": "0011233490018",
+	"nutriments": {
+		"trans-fat": {
+			"$numberInt": "0"
+		},
+		"calcium_serving": {
+			"$numberDouble": "0.0205"
+		},
+		"calcium_unit": "mg",
+		"vitamin-a_value": {
+			"$numberInt": "0"
+		},
+		"sodium_serving": {
+			"$numberDouble": "0.264"
+		},
+		"salt_serving": {
+			"$numberDouble": "0.661"
+		},
+		"carbohydrates_unit": "g",
+		"cholesterol_100g": {
+			"$numberInt": "0"
+		},
+		"iron_unit": "mg",
+		"proteins_value": {
+			"$numberDouble": "1.75"
+		},
+		"trans-fat_unit": "g",
+		"iron_value": {
+			"$numberDouble": "0.95"
+		},
+		"saturated-fat_serving": {
+			"$numberInt": "7"
+		},
+		"energy-kcal": {
+			"$numberInt": "237"
+		},
+		"fat_serving": {
+			"$numberInt": "15"
+		},
+		"proteins_100g": {
+			"$numberDouble": "1.75"
+		},
+		"sodium_value": {
+			"$numberInt": "232"
+		},
+		"fat_value": {
+			"$numberDouble": "13.16"
+		},
+		"nova-group": {
+			"$numberInt": "4"
+		},
+		"saturated-fat_value": {
+			"$numberDouble": "6.14"
+		},
+		"sodium": {
+			"$numberDouble": "0.232"
+		},
+		"fiber_100g": {
+			"$numberDouble": "3.5"
+		},
+		"fat_unit": "g",
+		"salt_value": {
+			"$numberInt": "580"
+		},
+		"sugars_serving": {
+			"$numberInt": "8"
+		},
+		"carbohydrates_value": {
+			"$numberDouble": "29.82"
+		},
+		"trans-fat_value": {
+			"$numberInt": "0"
+		},
+		"carbohydrates_100g": {
+			"$numberDouble": "29.82"
+		},
+		"vitamin-c_100g": {
+			"$numberInt": "0"
+		},
+		"salt_unit": "mg",
+		"fiber_unit": "g",
+		"energy_100g": {
+			"$numberInt": "992"
+		},
+		"vitamin-c_value": {
+			"$numberInt": "0"
+		},
+		"nova-group_100g": {
+			"$numberInt": "4"
+		},
+		"salt": {
+			"$numberDouble": "0.58"
+		},
+		"sugars": {
+			"$numberDouble": "7.02"
+		},
+		"vitamin-c_serving": {
+			"$numberInt": "0"
+		},
+		"sugars_value": {
+			"$numberDouble": "7.02"
+		},
+		"vitamin-a_100g": {
+			"$numberInt": "0"
+		},
+		"proteins_serving": {
+			"$numberInt": "2"
+		},
+		"energy-kcal_value": {
+			"$numberInt": "237"
+		},
+		"cholesterol_unit": "mg",
+		"fat_100g": {
+			"$numberDouble": "13.16"
+		},
+		"calcium": {
+			"$numberDouble": "0.018"
+		},
+		"nova-group_serving": {
+			"$numberInt": "4"
+		},
+		"nutrition-score-fr_100g": {
+			"$numberInt": "8"
+		},
+		"sugars_unit": "g",
+		"trans-fat_100g": {
+			"$numberInt": "0"
+		},
+		"vitamin-c_unit": "mg",
+		"cholesterol_value": {
+			"$numberInt": "0"
+		},
+		"carbohydrates": {
+			"$numberDouble": "29.82"
+		},
+		"fruits-vegetables-nuts-estimate-from-ingredients_100g": {
+			"$numberDouble": "4.761904761904762"
+		},
+		"saturated-fat": {
+			"$numberDouble": "6.14"
+		},
+		"vitamin-a": {
+			"$numberInt": "0"
+		},
+		"cholesterol_serving": {
+			"$numberInt": "0"
+		},
+		"energy_serving": {
+			"$numberInt": "1130"
+		},
+		"saturated-fat_100g": {
+			"$numberDouble": "6.14"
+		},
+		"trans-fat_serving": {
+			"$numberInt": "0"
+		},
+		"sugars_100g": {
+			"$numberDouble": "7.02"
+		},
+		"vitamin-a_serving": {
+			"$numberInt": "0"
+		},
+		"iron": {
+			"$numberDouble": "0.00095"
+		},
+		"sodium_100g": {
+			"$numberDouble": "0.232"
+		},
+		"vitamin-c": {
+			"$numberInt": "0"
+		},
+		"energy-kcal_serving": {
+			"$numberInt": "270"
+		},
+		"energy_unit": "kcal",
+		"energy_value": {
+			"$numberInt": "237"
+		},
+		"energy-kcal_100g": {
+			"$numberInt": "237"
+		},
+		"energy-kcal_unit": "kcal",
+		"fat": {
+			"$numberDouble": "13.16"
+		},
+		"nutrition-score-fr": {
+			"$numberInt": "8"
+		},
+		"calcium_100g": {
+			"$numberDouble": "0.018"
+		},
+		"vitamin-a_unit": "IU",
+		"cholesterol": {
+			"$numberInt": "0"
+		},
+		"energy": {
+			"$numberInt": "992"
+		},
+		"proteins_unit": "g",
+		"iron_100g": {
+			"$numberDouble": "0.00095"
+		},
+		"salt_100g": {
+			"$numberDouble": "0.58"
+		},
+		"fiber_value": {
+			"$numberDouble": "3.5"
+		},
+		"sodium_unit": "mg",
+		"calcium_value": {
+			"$numberInt": "18"
+		},
+		"carbohydrates_serving": {
+			"$numberInt": "34"
+		},
+		"iron_serving": {
+			"$numberDouble": "0.00108"
+		},
+		"fiber_serving": {
+			"$numberDouble": "3.99"
+		},
+		"fiber": {
+			"$numberDouble": "3.5"
+		},
+		"saturated-fat_unit": "g",
+		"proteins": {
+			"$numberDouble": "1.75"
+		}
+	},
+	"nutriscore_data": {
+		"energy": {
+			"$numberInt": "992"
+		},
+		"grade": "c",
+		"sodium": {
+			"$numberInt": "232"
+		},
+		"energy_value": {
+			"$numberInt": "992"
+		},
+		"saturated_fat_points": {
+			"$numberInt": "6"
+		},
+		"score": {
+			"$numberInt": "8"
+		},
+		"fiber": {
+			"$numberDouble": "3.5"
+		},
+		"sugars": {
+			"$numberDouble": "7.02"
+		},
+		"saturated_fat": {
+			"$numberDouble": "6.14"
+		},
+		"proteins": {
+			"$numberDouble": "1.75"
+		},
+		"energy_points": {
+			"$numberInt": "2"
+		},
+		"saturated_fat_ratio_value": {
+			"$numberDouble": "46.7"
+		},
+		"fiber_value": {
+			"$numberDouble": "3.5"
+		},
+		"saturated_fat_ratio": {
+			"$numberDouble": "46.65653495440729"
+		},
+		"fruits_vegetables_nuts_colza_walnut_olive_oils_points": {
+			"$numberInt": "0"
+		},
+		"is_fat": {
+			"$numberInt": "0"
+		},
+		"saturated_fat_ratio_points": {
+			"$numberInt": "7"
+		},
+		"fruits_vegetables_nuts_colza_walnut_olive_oils_value": {
+			"$numberDouble": "4.8"
+		},
+		"is_cheese": {
+			"$numberInt": "0"
+		},
+		"sugars_value": {
+			"$numberInt": "7"
+		},
+		"sodium_value": {
+			"$numberInt": "232"
+		},
+		"positive_points": {
+			"$numberInt": "3"
+		},
+		"fruits_vegetables_nuts_colza_walnut_olive_oils": {
+			"$numberDouble": "4.761904761904762"
+		},
+		"is_beverage": {
+			"$numberInt": "0"
+		},
+		"sodium_points": {
+			"$numberInt": "2"
+		},
+		"is_water": {
+			"$numberInt": "0"
+		},
+		"saturated_fat_value": {
+			"$numberDouble": "6.1"
+		},
+		"proteins_value": {
+			"$numberDouble": "1.75"
+		},
+		"proteins_points": {
+			"$numberInt": "1"
+		},
+		"sugars_points": {
+			"$numberInt": "1"
+		},
+		"negative_points": {
+			"$numberInt": "11"
+		},
+		"fiber_points": {
+			"$numberInt": "3"
+		}
+	},
+		"grade_es": "c",
+		"score_be": {
+			"$numberInt": "54"
+		},
+		"grade": "c",
+		"grade_ie": "c",
+		"missing_data_warning": {
+			"$numberInt": "1"
+		},
+	"product_name_en_imported": "Old fashioned apple pie, apple",
+	"nova_group": {
+		"$numberInt": "4"
+	},
+	"nutrition_grade_fr": "c",
+	"nutrient_levels": {
+		"salt": "moderate",
+		"sugars": "moderate",
+		"fat": "moderate",
+		"saturated-fat": "high"
+	}
+}

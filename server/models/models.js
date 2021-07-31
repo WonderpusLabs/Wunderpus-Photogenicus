@@ -11,22 +11,31 @@ mongoose
 })
 .then(() => console.log('Connected to Mongo DB.'))
 .catch((err) => console.log(err));
+
 const Schema = mongoose.Schema;
+
 const addMealSchema = new Schema({
     name: {type: String, required: true},
     foods:[foodSchema],
     date: {type: Date, default: Date.now},
 });
-const addMeal = mongoose.model('meal', addMealSchema)
+const addMeal = mongoose.model('meal', addMealSchema);
+
 const addFoodSchema = new Schema({
     foodName: String,
+    fats: {type: Number, required: true},
+    carbs: {type: Number, required: true},
+    protein: {type: Number, required: true},
+    calories: {type: Number, required: true}
 });
-const addFood = mongoose.model('food', addFoodSchema)
+const addFood = mongoose.model('food', addFoodSchema);
+
 const createUserSchema = new Schema ({
     uid: {type: String, required: true, unique: true},
     password: {type: String, required: true}
-})
-const createUser = mongoose.model('user', createUserSchema)
+});
+const createUser = mongoose.model('user', createUserSchema);
+
 module.exports = {
     addMeal,
     addFood,

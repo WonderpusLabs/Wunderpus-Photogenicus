@@ -3,7 +3,7 @@ const loginRouter = express.Router();
 
 const loginController = require('../controllers/loginController')
 
-loginRouter.get('/', loginController.someMiddlewareFun, (req, res) => {
+loginRouter.get('/', (req, res) => {
 
 });
 

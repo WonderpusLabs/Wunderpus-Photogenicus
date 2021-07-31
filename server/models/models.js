@@ -10,7 +10,7 @@ mongoose
     useUnifiedTopology: true,
     // sets the name of the DB that our collections are part of
     dbName: 'Food',
-})
+}) 
 .then(() => console.log('Connected to Mongo DB.'))
 .catch((err) => console.log(err));
 

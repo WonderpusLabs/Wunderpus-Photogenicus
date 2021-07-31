@@ -8,10 +8,13 @@ function App(props) {
 
   return (
     <>
-      <header>
-        <Link to="/"><h1>YourFitnessPal</h1></Link>
+      <div className="containerApp">
+        <header className="headerApp">
+          <Link to="/"><h1>YourFitnessPal</h1></Link>
 
-      </header>
+
+        </header>
+      </div>
       <Switch>
         <Route exact path='/signup'>
           <SignupComponent />

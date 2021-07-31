@@ -40,7 +40,7 @@ const SignupComponent = (props) => {
   }
 
   return (
-    <div id="signupform">
+    <div className="signupform">
       <h3>Sign Up for an Account</h3>
       <form id="signup">
         <label htmlFor="signup-user">Username: </label>

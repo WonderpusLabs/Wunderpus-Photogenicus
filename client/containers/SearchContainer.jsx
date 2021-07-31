@@ -14,10 +14,10 @@ class SearchContainer extends Component {
 
   handleSearchSubmit = (e) => {
     e.preventDefault();
-    const search = document.getElementById('searchbar').value;
+    const searchTerm = document.getElementById('searchbar').value;
     fetch('/api', {
       method: 'GET',
-      body: JSON.stringify(search)
+      body: JSON.stringify(searchTerm)
     })
       .then(res => res.json())
       .then(data => {

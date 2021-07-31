@@ -14,30 +14,23 @@ mongoose
 
 const Schema = mongoose.Schema;
 
-const addMealSchema = new Schema({
-    name: {type: String, required: true},
-    foods:[foodSchema],
+const MealSchema = new Schema({
+    foods:[FoodSchema],
     date: {type: Date, default: Date.now},
 });
-const addMeal = mongoose.model('meal', addMealSchema);
+const Meal = mongoose.model('meal', MealSchema);
 
-const addFoodSchema = new Schema({
+const FoodSchema = new Schema({
     foodName: String,
     fats: {type: Number, required: true},
     carbs: {type: Number, required: true},
     protein: {type: Number, required: true},
     calories: {type: Number, required: true}
 });
-const addFood = mongoose.model('food', addFoodSchema);
+const Food = mongoose.model('food', FoodSchema);
 
-const createUserSchema = new Schema ({
-    uid: {type: String, required: true, unique: true},
-    password: {type: String, required: true}
-});
-const createUser = mongoose.model('user', createUserSchema);
 
 module.exports = {
-    addMeal,
-    addFood,
-    createUser
+    Meal,
+    Food,
 };

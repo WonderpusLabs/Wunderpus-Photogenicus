@@ -49,6 +49,7 @@ const SignupComponent = (props) => {
         <input type="password" id="signup-password" />
 
         <input type="submit" value="Sign Up" className="btn" id="signup-submit" onSubmit={handleSignUp} />
+        {error}
       </form>
 
     </div>

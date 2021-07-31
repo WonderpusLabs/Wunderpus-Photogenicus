@@ -1,3 +1,4 @@
+// make sure to bcrypt password
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
@@ -15,3 +16,4 @@ mongoose
 .catch((err) => console.log(err));
 
 const Schema = mongoose.Schema;
+

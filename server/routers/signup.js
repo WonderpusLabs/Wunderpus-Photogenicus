@@ -1,5 +1,12 @@
 const express = require('express');
-const router = express.Router();
-const signupController = require('../controllers/signupController');
+const signupRouter = express.Router();
 
-module.exports = router;
+const signupController = require('../controllers/signupController')
+const cookieController = require('../controllers/cookieController')
+
+
+signupRouter.post('/', signupController.addNewUser, cookieController.setSSIDCookie, (req, res) => {
+  res.redirect('/main');
+});
+
+module.exports = signupRouter;

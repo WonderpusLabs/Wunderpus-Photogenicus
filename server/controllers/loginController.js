@@ -5,7 +5,7 @@ const User = require('../models/userModel');
 
 const loginController = {};
 
-longinController.verifyUser = async (req, res, next) => {
+loginController.verifyUser = async (req, res, next) => {
   // write code here
   try {
     const {username, password} = req.body;

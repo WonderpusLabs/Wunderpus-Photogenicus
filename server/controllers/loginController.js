@@ -1,14 +1,24 @@
 const path = require('path');
 const { model } = require('mongoose');
 
+const User = require('../models/userModel');
+
 const loginController = {};
 
-loginController.doSomething = (req, res, next) => {
-
-}
-
-
-// add in database query to veritfy user and cookies
-
+loginController.verifyUser = async (req, res, next) => {
+  // write code here
+  try {
+    const {username, password} = req.body;
+    //console.log(pass);
+    await User.findOne({username}, (req, user) => {
+      if (user.password === password) {
+        res.locals.uid = username;
+      }
+      return next();
+    })
+  } catch (err) {
+    return next(err);
+  }
+};
 
 module.exports = loginController;

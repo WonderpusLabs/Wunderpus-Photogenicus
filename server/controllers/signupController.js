@@ -9,6 +9,7 @@ signupController.addNewUser = (req, res, next) => {
   try {
     const { username, password } = req.body;
     if (username && password) {
+      // await User.create({username, password});
       res.locals.uid = username
       return next();
     }

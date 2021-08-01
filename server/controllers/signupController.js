@@ -5,11 +5,15 @@ const User = require('../models/userModel');
 
 const signupController = {};
 
-signupController.addNewUser = (req, res, next) => {
+signupController.addNewUser = async (req, res, next) => {
   try {
     const { username, password } = req.body;
     if (username && password) {
-      // await User.create({username, password});
+      await User.create({
+        username,
+        password
+      });
+      
       res.locals.uid = username
       return next();
     }

@@ -19,13 +19,18 @@ const Schema = mongoose.Schema;
 
 
 const FoodSchema = new Schema({
-  foodName: String,
-  fats: { type: Number, required: true },
-  carbs: { type: Number, required: true },
-  protein: { type: Number, required: true },
-  calories: { type: Number, required: true }
+   product_name:String,
+   protein: String,
+   carbs: String,
+   fiber: String,
+   sodium: String,
+   fats: String,
+   score: String,
+   sugar: String,
+   calories: String
 });
 const Food = mongoose.model('food', FoodSchema);
+
 
 const MealSchema = new Schema({
   foods: [FoodSchema],

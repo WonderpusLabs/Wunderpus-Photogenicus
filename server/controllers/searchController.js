@@ -4,7 +4,7 @@ const { Food } = require('../models/models');
 
 const searchController = {};
 
-searchController.searchFood = (req, res, next) => {
+searchController.searchFood = async (req, res, next) => {
   try {
     const name = req.body;
     const foodDoc = await.Food.findOne({ product_name: name });

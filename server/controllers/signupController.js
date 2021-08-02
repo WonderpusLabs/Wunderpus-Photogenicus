@@ -1,7 +1,7 @@
 const path = require('path');
 const { model } = require('mongoose');
 
-const User = require('../models/userModel');
+const { User } = require('../models/models');
 
 const signupController = {};
 
@@ -13,14 +13,14 @@ signupController.addNewUser = async (req, res, next) => {
         username,
         password
       });
-      
+
       res.locals.uid = username
       return next();
     }
   } catch (err) {
     return next({
       log: 'error in the signupController addUser',
-      message: {err: 'Error occured in signupController addUser'}
+      message: { err: 'Error occured in signupController addUser' }
     })
   }
 }

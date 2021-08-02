@@ -28,7 +28,7 @@ class SearchContainer extends Component {
   render() {
     // if (this.state.areResultsFetched) {
     //   const searchItems = this.state.results.map((result) => {
-    //     <SearchResultComponent />
+    //     <SearchResultComponent info={result} />
     //   })
     // }
 

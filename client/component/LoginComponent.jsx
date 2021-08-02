@@ -11,7 +11,7 @@ const LoginComponent = props => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:3000/api", {
+    fetch("/login", {
       method: "POST",
       headers: {
         Accept: "application/JSON",

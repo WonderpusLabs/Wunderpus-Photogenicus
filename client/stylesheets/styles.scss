@@ -1,93 +1,95 @@
+body {
+	margin: 0;
+	padding: 0;
+}
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 .containerApp {
-
-background-color: rgb(0, 255, 55);
-    .headerApp{
-        display: flex;
-        justify-content: center;
-        color: white;
-    }
+	background-color: #4267B2;
+	.headerApp {
+		display: flex;
+		justify-content: center;
+		color: white;
+		a:visited {
+			color: #fff;
+		}
+	}
 }
-
-.loginContainer, .signupform, .search {
-display: flex;
-flex-direction: column;
-align-items: center;
+.loginContainer,
+.signupform,
+.search {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1rem;
 }
-
 #searchbar {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  width: 15rem;
-  height: 3rem;
-  border-radius: 1rem;
-  border: 1px solid rebeccapurple;
-  padding: .5rem;
-  :focus {
-    outline: none;
-  }
-  font-size: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 15rem;
+	height: 3rem;
+	border-radius: 1rem;
+	border: 1px solid rebeccapurple;
+	padding: 0.5rem;
+	:focus {
+		outline: none;
+	}
+	font-size: 1rem;
 }
-
 #search-submit {
-  background-color: rgb(0, 255, 55);
-  padding: .5rem;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-  margin-left: .5rem;
+	background-color: rgb(0, 255, 55);
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	margin-left: 0.5rem;
 }
-
-
 .searchResultContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-style: solid;
-  border-color: black;
-  border-width: 1.5px;
-  border-radius: 60px;
-  height: 100px;
-  width: 550px;
-  padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 1.5px;
+	border-radius: 60px;
+	height: 100px;
+	width: 550px;
+	padding: 15px;
 }
 .foodName {
-  margin-top: 9px;
-  margin-bottom: 3px;
+	margin-top: 9px;
+	margin-bottom: 3px;
 }
-
 .rowNutritionInfo1,
 .rowNutritionInfo2,
 .rowNutritionInfo3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 3px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 3px;
 }
-
 .rowNutritionInfo2 {
-  margin-left: 20px;
+	margin-left: 20px;
 }
 .rowNutritionInfo3 {
-  margin-left: 80px;
-  padding-left: 22px;
+	margin-left: 80px;
+	padding-left: 22px;
 }
 .nutFacts {
-  margin-right: 70px;
+	margin-right: 70px;
 }
 .addItemBtn {
-  margin-top: 5px;
-  margin-bottom: 9px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  height: 20px;
-  width: 80px;
-  border-radius: 8px;
-  background-color: #f9f7f7;
-  cursor: pointer;
+	margin-top: 5px;
+	margin-bottom: 9px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height: 20px;
+	width: 80px;
+	border-radius: 8px;
+	background-color: #4267B2;
+	cursor: pointer;
 }

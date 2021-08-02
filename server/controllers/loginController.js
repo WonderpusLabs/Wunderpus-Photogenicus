@@ -1,6 +1,9 @@
 const path = require('path');
 const { model } = require('mongoose');
 
+const bcrypt = require('bcrypt');
+const SALT_WORK_FACTOR = 10;
+
 const User = require('../models/userModel');
 
 const loginController = {};
@@ -8,10 +11,11 @@ const loginController = {};
 loginController.verifyUser = async (req, res, next) => {
   // write code here
   try {
-    const {username, password} = req.body;
+    const { username, password } = req.body;
     //console.log(pass);
-    await User.findOne({username}, (req, user) => {
-      if (user.password === password) {
+    await User.findOne({ username }, async (req, user) => {
+      const correctPassword = await bcrypt.compare(password, user.password)
+      if (correctPassword) {
         res.locals.uid = username;
       }
       return next();

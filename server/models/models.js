@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 const MONGO_URI = process.env.db_uri
+const bcrypt = require('bcrypt');
+const SALT_WORK_FACTOR = 10;
 mongoose
   .connect(MONGO_URI, {
     // options for the connect method to parse the URI

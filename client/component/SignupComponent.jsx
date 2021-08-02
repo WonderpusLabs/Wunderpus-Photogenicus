@@ -19,7 +19,7 @@ const SignupComponent = (props) => {
       password
     }
     //make a post request to sign up
-    fetch('/signup', {
+    fetch('/api/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'Application/JSON'
@@ -27,7 +27,6 @@ const SignupComponent = (props) => {
       //turn the body into JSON
       body: JSON.stringify(body)
     })
-      .then(resp => resp.json())
       .then(data => {
         console.log(data);
         //if it works, set success to true

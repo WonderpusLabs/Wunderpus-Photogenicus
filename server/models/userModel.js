@@ -12,11 +12,14 @@ const userSchema = new Schema({
   password: { type: String, required: true }
 });
 
-userSchema.pre('save', function (next) {
-  const salt = bcrypt.genSaltSync(SALT_WORK_FACTOR);
-  const hash = bcrypt.hashSync(this.password, salt);
-  this.password = hash;
-  return next();
+userSchema.pre('save', async function (next) {
+  try {
+    const hash = await bcrypt.hash(this.password, SALT_WORK_FACTOR);
+    this.password = hash;
+    return next();
+  } catch (err) {
+    console.log(err)
+  }
 })
 
 module.exports = mongoose.model('User', userSchema);

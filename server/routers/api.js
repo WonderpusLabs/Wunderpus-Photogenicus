@@ -4,7 +4,7 @@ const router = express.Router();
 const signupController = require('../controllers/signupController')
 const cookieController = require('../controllers/cookieController')
 const loginController = require('../controllers/loginController')
-const searchController = require('../controllers/loginController')
+const searchController = require('../controllers/searchController')
 
 
 router.post('/signup', signupController.addNewUser, cookieController.setSSIDCookie, (req, res) => {

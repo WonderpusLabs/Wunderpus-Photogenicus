@@ -5,21 +5,21 @@ const app = express();
 const PORT = 3000;
 
 // require routers
-const apiRouter = require ('./routers/api');
+const apiRouter = require('./routers/api');
 const signupRouter = require('./routers/signup');
 const loginRouter = require('./routers/login');
 
 
 // handle parsing request body
 app.use(express.json());
-app.use(express.urlencoded({ extended:true }));
+app.use(express.urlencoded({ extended: true }));
 
 
 // handle requests for static files
 app.use(express.static(path.join(__dirname, '../build')));
 
 // define route handlers
-app.use('/', apiRouter );
+app.use('/api', apiRouter);
 app.use('/signup', signupRouter);
 app.use('/login', loginRouter);
 
@@ -52,7 +52,7 @@ app.use('*', (req, res) => {
 
 
 // start server
- app.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Server listening on port: ${PORT}`);
 });
 

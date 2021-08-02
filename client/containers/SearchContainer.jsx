@@ -6,7 +6,7 @@ class SearchContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      results: [],
+      results: null,
       areResultsFetched: false
     }
     this.handleSearchSubmit = this.handleSearchSubmit.bind(this);
@@ -15,9 +15,14 @@ class SearchContainer extends Component {
   handleSearchSubmit = (e) => {
     e.preventDefault();
     const searchTerm = document.getElementById('searchbar').value;
-    fetch('/api', {
-      method: 'GET',
-      body: JSON.stringify(searchTerm)
+    console.log('search term: ', searchTerm)
+    const body = { searchTerm }
+    fetch('/api/search', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'Application/JSON'
+      },
+      body: JSON.stringify(body)
     })
       .then(res => res.json())
       .then(data => {
@@ -26,22 +31,16 @@ class SearchContainer extends Component {
   }
 
   render() {
-    // if (this.state.areResultsFetched) {
-    //   const searchItems = this.state.results.map((result) => {
-    //     <SearchResultComponent info={result} />
-    //   })
-    // }
+
 
     return (
       <>
         <div className='search'>
           <SearchBarComponent handleSearchSubmit={this.handleSearchSubmit} />
-          {/* {this.state.areResultsFetched && { searchItems }} */}
+          {this.state.areResultsFetched && <SearchResultComponent info={this.state.results} />}
 
 
-          <div>
-            <SearchResultComponent />
-          </div>
+
         </div>
       </>
     )

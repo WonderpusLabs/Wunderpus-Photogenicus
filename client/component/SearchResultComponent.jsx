@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from "react";
 
 const SearchResultComponent = (props) => {
-  // const { foodName, calories, score, carbs, fat, sugar, fiber, sodium } = props.info
+  const { product_name, calories, score, carbs, fats, sugar, fiber, sodium, protein } = props.info
 
   const [itemStatus, setItemStatus] = useState(false);
 
@@ -19,33 +19,33 @@ const SearchResultComponent = (props) => {
 
   return (
     <div className="searchResultContainer">
-      <strong className="foodName">Food Name {props.foodName}</strong>
+      <strong className="foodName"> {product_name}</strong>
       <div className="rowNutritionInfo1">
         <span className="nutFacts">
-          Calories: 300{props.calories ? props.calories : ""}
+          Calories: {calories ? calories : ""}
         </span>
         <span className="nutFacts">
-          Nutrition Score: 75{props.score ? props.score : ""}
+          Nutrition Score: {score ? score : ""}
         </span>
       </div>
       <div className="rowNutritionInfo2">
         <span className="nutFacts">
-          Carbohydrates: 90g{props.carbs ? props.carbs : ""}
+          Carbohydrates: {carbs ? carbs : ""}
         </span>
         <span className="nutFacts">
-          Protein: 50g{props.protein ? props.protein : ""}
+          Protein: {protein ? protein : ""}
         </span>
-        <span className="nutFacts">Fat: 20 {props.fat ? props.fat : ""}</span>
+        <span className="nutFacts">Fat: {fats ? fats : ""}</span>
       </div>
       <div className="rowNutritionInfo3">
         <span className="nutFacts">
-          Sugar: 6g {props.sugar ? props.sugar : ""}
+          Sugar: {sugar ? sugar : ""}
         </span>
         <span className="nutFacts">
-          Fiber: 6g {props.fiber ? props.fiber : ""}
+          Fiber: {fiber ? fiber : ""}
         </span>
         <span className="nutFacts">
-          Sodium: 200 {props.sodium ? props.sodium : ""}
+          Sodium: {sodium ? sodium : ""}
         </span>
       </div>
       <div>

@@ -5,18 +5,21 @@ const Schema = mongoose.Schema;
 * Hint: Why is bcrypt required here?
 */
 const SALT_WORK_FACTOR = 10;
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 
 const userSchema = new Schema({
-  username: {type: String, required: true, unique: true},
-  password: {type: String, required: true}
+  username: { type: String, required: true, unique: true },
+  password: { type: String, required: true }
 });
 
-userSchema.pre('save', function (next) {
-  const salt = bcrypt.genSaltSync(SALT_WORK_FACTOR);
-  const hash = bcrypt.hashSync(this.password, salt);
-  this.password = hash;
-  return next();
-}) 
+userSchema.pre('save', async function (next) {
+  try {
+    const hash = await bcrypt.hash(this.password, SALT_WORK_FACTOR);
+    this.password = hash;
+    return next();
+  } catch (err) {
+    console.log(err)
+  }
+})
 
 module.exports = mongoose.model('User', userSchema);

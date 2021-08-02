@@ -42,23 +42,52 @@ align-items: center;
 
 
 .searchResultContainer {
-    display: flex;
-    flex-direction: row;
-border-style: solid;
-border-color: rgb(0, 255, 55);
-border-width: 1px;
-border-radius: 60px;
-height: 80px;
-width: 500px;
-padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 1.5px;
+  border-radius: 60px;
+  height: 100px;
+  width: 550px;
+  padding: 15px;
 }
-
 .foodName {
-    display: flex;
-align-items: flex-start;
+  margin-top: 9px;
+  margin-bottom: 3px;
 }
 
-.rowNutritionInfo {
-    display: flex;
-    flex-direction: column;
+.rowNutritionInfo1,
+.rowNutritionInfo2,
+.rowNutritionInfo3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3px;
+}
+
+.rowNutritionInfo2 {
+  margin-left: 20px;
+}
+.rowNutritionInfo3 {
+  margin-left: 80px;
+  padding-left: 22px;
+}
+.nutFacts {
+  margin-right: 70px;
+}
+.addItemBtn {
+  margin-top: 5px;
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  height: 20px;
+  width: 80px;
+  border-radius: 8px;
+  background-color: #f9f7f7;
+  cursor: pointer;
 }

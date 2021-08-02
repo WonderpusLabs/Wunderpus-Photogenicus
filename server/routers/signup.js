@@ -6,7 +6,7 @@ const cookieController = require('../controllers/cookieController')
 
 
 signupRouter.post('/', signupController.addNewUser, cookieController.setSSIDCookie, (req, res) => {
-  res.redirect('/main');
+  res.sendStatus(200);
 });
 
 module.exports = signupRouter;

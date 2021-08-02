@@ -19,7 +19,7 @@ const SignupComponent = (props) => {
       password
     }
     //make a post request to sign up
-    fetch('/signup', {
+    fetch('/api/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'Application/JSON'
@@ -27,13 +27,12 @@ const SignupComponent = (props) => {
       //turn the body into JSON
       body: JSON.stringify(body)
     })
-      .then(resp => resp.json())
       .then(data => {
         console.log(data);
         //if it works, set success to true
         setSuccess(true);
         //send user to a different page [NOTE: where should they go? Should they have to login after signing up or be auto-logged-in?]
-        props.history.push('/');
+        props.history.push('/search');
       })
       //if there's an error we'll render an error message below
       .catch(err => setError(err))
@@ -48,8 +47,8 @@ const SignupComponent = (props) => {
         <label htmlFor="signup-password">Password: </label>
         <input type="password" id="signup-password" />
 
-        <input type="submit" value="Sign Up" className="btn" id="signup-submit" onSubmit={handleSignUp} />
-        {error}
+        <input type="submit" value="Sign Up" className="btn" id="signup-submit" onClick={handleSignUp} />
+
       </form>
 
     </div>

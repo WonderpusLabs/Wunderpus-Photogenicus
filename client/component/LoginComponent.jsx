@@ -1,7 +1,8 @@
 import React from "react";
 // import '../stylesheets/styles.css'
 import { useState } from "react";
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
+
 
 const LoginComponent = props => {
   const [username, setUsername] = useState("");
@@ -11,7 +12,7 @@ const LoginComponent = props => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:3000/api", {
+    fetch("/api/login", {
       method: "POST",
       headers: {
         Accept: "application/JSON",
@@ -22,9 +23,9 @@ const LoginComponent = props => {
         password: password,
       }),
     })
-      .then((resp) => resp.json())
       .then((data) => {
         console.log(data);
+        props.history.push('/search')
       })
       .catch((err) => console.log("Login fetch /api ERROR: ", err));
   };
@@ -51,4 +52,4 @@ const LoginComponent = props => {
   )
 }
 
-export default LoginComponent
+export default withRouter(LoginComponent)
